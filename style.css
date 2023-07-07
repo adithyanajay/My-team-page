@@ -1,2 +1,145 @@
 @import url(./constants.css);
 
+.app {
+    padding: 1rem;
+    text-align: left;
+}
+
+.header {
+    margin-top: 4rem;
+}
+
+.heading {
+    font-family: var(--pt-serif);
+    font-size: var(--text-4xl);
+    font-weight: bold;
+    margin-bottom: 3rem;
+}
+
+.header-content-heading {
+    text-transform: uppercase;
+    font-size: var(--text-xl);
+    font-family: var(--poppins);
+    margin-bottom: 1rem;
+}
+.photo-name {
+    font-family: var(--poppins);
+    font-size: var(--text-sm);
+}
+
+
+.header-content-para {
+    font-size: var(--text-base);
+    font-family: var(--poppins);
+    margin-bottom: 4rem;
+}
+
+.photo-grid-container {
+    margin: auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 48% 48%;
+    row-gap: 1rem;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 700px;
+}
+.photo-container {
+    width: 100%;
+    height: 80vw;
+    max-height: 38rem;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.top {
+    justify-content: start;
+}
+
+.bottom {
+    justify-content: end;
+}
+
+.photo-data-container {
+    width: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    gap: .5rem;
+   
+}
+
+.img-container {
+    width: 95%;
+   
+}
+.img-container>img {
+    width: 100%;
+}
+
+.photo-rotated-div {
+    width: 5%;
+    white-space: nowrap;
+    text-transform: uppercase;
+   
+    transform: rotate(90deg);
+}
+
+.photo-rotated-text {
+    font-size: var(--text-xs);
+}
+
+.footer {
+    color: var(--secondary-grey);
+    width: 100%;
+    text-align: center;
+    margin-top: 4rem;
+    padding: 1rem 0;
+    font-size: var(--text-sm);
+} 
+.footer>p>a {
+    color: var(--secondary-grey);
+    text-decoration: underline;
+}
+
+@media (min-width:768px) {
+    .header {
+        margin: 4rem auto;
+        display: flex;
+        justify-content: center;    
+        max-width: 1000px;
+
+    }
+    .heading {
+        width: 50%;
+       
+    }
+    .header-content{
+        width: 50%;
+    }
+    .photo-name {
+        font-size: var(--text-base);
+    }
+    .footer {
+        padding-bottom: 1rem;
+    }
+}
+
+@media (min-width:1024px) {
+    .photo-grid-container {
+        grid-template-columns: 32% 32% 32%;
+        max-width: 1000px;
+    }
+    .big-top {
+        justify-content: start;
+    }
+    .big-bottom {
+        justify-content: end;
+    }
+
+    .footer {
+        font-size: var(--text-base);
+    }
+}
